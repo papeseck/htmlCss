@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHOPPING CART PROJECT</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="style.js" async></script>
+        <script src="https://kit.fontawesome.com/1c7cb43725.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">PRODUCTS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Amazon Smart Box</span>
+                    <img class="shop-item-image" src="Images/img1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">12000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Amazon Alexa</span>
+                    <img class="shop-item-image" src="Images/img2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">25000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Guant Thermique</span>
+                    <img class="shop-item-image" src="Images/img4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">9000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Sac a main</span>
+                    <img class="shop-item-image" src="Images/img3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">30000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bonnet Noir</span>
+                    <img class="shop-item-image" src="Images/img5.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">10000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/img6.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">6000 Fcfa</span>
+                        <button onclick=addToCart(this) class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">SHOPPING CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM(S)</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                <span class="cart-quantity cart-header cart-column">TOTAL</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">TOTAL</strong>
+                <span class="cart-total-price">xxx</span>
+            </div>
+            <button  class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
+</html>
